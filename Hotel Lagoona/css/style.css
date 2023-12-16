@@ -2,27 +2,21 @@ body {
     background-color: #F1F1F1;;
 }
 .header {
-    justify-content: center;
-    align-items: center;
-    width: 1170px;
-    height: 154px;
-    border: 1px;
+    margin-top: 20px;
 }
 
 .container {
     max-width: 1170px;
-    justify-content: center;
-    align-items: center;
-    display: inline-block;
-    margin-left: 375px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-1-h1 {
     display: inline-block;
 }
+
 .nav {
     display: flex;
-    position: absolute;
 }
 
 .comp1 {
@@ -39,4 +33,33 @@ body {
     width: 573px;
     height: 165px;
     background-repeat: no-repeat;
+}
+
+.comp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 24px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list-item:not(:first-child){
+    margin-left: 45px;
+}
+
+.nav-list-button {
+    margin-left: auto;
+}
+
+.nav {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
 }
