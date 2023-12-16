@@ -1,0 +1,42 @@
+body {
+    background-color: #F1F1F1;;
+}
+.header {
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    height: 154px;
+    border: 1px;
+}
+
+.container {
+    max-width: 1170px;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin-left: 375px;
+}
+
+.section-1-h1 {
+    display: inline-block;
+}
+.nav {
+    display: flex;
+    position: absolute;
+}
+
+.comp1 {
+    width: 573px;
+    height: 165px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 15px 15px;
+    display: block;
+    background: white;
+}
+
+.comp1-image {
+    background-image: url(/img/Шампанское.png);
+    width: 573px;
+    height: 165px;
+    background-repeat: no-repeat;
+}
