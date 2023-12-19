@@ -1,8 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #F1F1F1;;
 }
 .header {
     margin-top: 20px;
+}
+
+.header-up {
+    display: flex;
+    align-items: center;
+}
+
+.Accaunt {
+    margin-left: auto;
 }
 
 .container {
@@ -15,8 +28,30 @@ body {
     display: inline-block;
 }
 
-.nav {
+.main-hero {
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-h {
+    column-gap: row;
+}
+
+.hero-1 {
+    width: 573px;
+    height: 258px;
+}
+.hero-3 {
+    width: 573px;
+    height: 258px;
+}
+
+.hero-2 {
+    Width:573px;
+    Height:540px;
+    justify-content: center;
+    align-items: center;
 }
 
 .comp1 {
@@ -58,8 +93,67 @@ ul {
 }
 
 .nav {
-    margin-right: auto;
     display: flex;
+    justify-content: space-between;
+
     align-items: center;
     margin-top: 16px;
 }
+
+.header-button {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.button {
+    display: block;
+}
+
+.cards-up {
+    display: flex;
+    gap: 22px;
+}
+
+.cards-down {
+    display: flex;
+    gap: 24px 24px;
+}
+
+.section-4-container {
+    margin-top: 70px;
+}
+
+/* .placement-card {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 24px;
+} */
+
+.cards {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.placement-item {
+    width: 374px;
+    background-color: white;
+    height: 440px;
+    border-radius: 15px;
+}
+
+.section-5-container {
+    margin-top: 70px;
+    width: 1210px !important;
+
+}
+
+.price {
+    display: flex;
+}
+
