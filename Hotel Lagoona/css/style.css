@@ -26,32 +26,120 @@ body {
 
 .section-1-h1 {
     display: inline-block;
+    color: #333;
+    font-family: 'Muller';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .main-hero {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    column-gap: 25px;
 }
 
-.main-h {
-    column-gap: row;
-}
+/* .main-h {
+
+} */
 
 .hero-1 {
     width: 573px;
     height: 258px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    padding-left: 45px;
+    background-image: url(/img/hero-1.jpg);
 }
+
 .hero-3 {
     width: 573px;
     height: 258px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    padding-left: 45px;
+    background-image: url(/img/hero-3.png);
+    margin-top: 25px;
 }
 
 .hero-2 {
-    Width:573px;
-    Height:540px;
-    justify-content: center;
-    align-items: center;
+    width: 573px;
+    height: 540px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    padding-left: 45px;
+    padding-top: 150px;
+    background-image: url(/img/hero-2.jpg);
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url(/fonts/MullerRegularItalic.eot);
+}
+
+.hero-h2 {
+    color: #FFF;
+    font-family: 'Muller';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 420px;
+    height: 80px;
+    padding-top: 40px;
+    margin: 0;
+}
+
+.hero-2-h2 {
+    color: #FFF;
+    font-family: 'Muller';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 299px;
+    height: 180px;
+}
+
+.Podrobnee {
+    color: #F0BF5F;
+    font-family: 'Muller';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.Podrobnee-1 {
+    color: #F0BF5F;
+    font-family: 'Muller';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding-top: 50px;
+}
+
+.paragraph-1 {
+    color: #FFF;
+    font-family: 'Muller';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    padding-top: 35px;
+}
+
+.paragraph {
+    color: #FFF;
+    font-family: 'Muller';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .comp1 {
@@ -90,6 +178,14 @@ ul {
 
 .nav-list-button {
     margin-left: auto;
+}
+
+.nav-div {
+    width: 1170px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background-color: #FFF;
 }
 
 .nav {
