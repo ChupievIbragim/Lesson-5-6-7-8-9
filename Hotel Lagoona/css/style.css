@@ -42,20 +42,27 @@ ul {
     align-items: center;
     display: inline-flex;
     margin-top: 30px;
+    color: #666;
 }
 
 .logo-tel {
     font-size: 20px;
     line-height: 20px;
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     padding-left: 40px;
+    color: #666;
 }
 
-.Acccaunt {
+.Accaunt {
+    display: block;
     font-size: 16px;
     font-family: 'Muller', sans-serif;
     line-height: 16px;
     color: #c93;
+}
+
+.Accaunt:hover {
+    color: #fccf9c;
 }
 
 .nav {
@@ -68,11 +75,21 @@ ul {
     display: flex;
     align-items: center;
     column-gap: 50px;
-    padding-left: 150px;
+    padding-left: 80px;
 }
 
 .button {
     display: block;
+    border: 1px solid #c93;
+    padding: 13px 20px;
+    border-radius: 10px;
+    color: #c93;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #c93;
+    color: white;
 }
 
 .header {
@@ -475,7 +492,6 @@ a {
 }
 
 .placement-item {
-
     width: 374px;
     background-color: white;
     height: 440px;
@@ -597,40 +613,99 @@ a {
     display: flex;
 }
 
-/* Section-6 */
+/* Section-6 Хочу Тур */
 
 .section-6-container {
     margin-top: 40px;
     width: 1170px;
     height: 256px;
     border: 1px;
-    background-color: #FFF;
-
+    background-color: #E9E9E9;
 }
 
 .Tur-h2 {
-    color: #000000;
-    font-family: 'Muller';
-    font-size: 40px;
-    font-style: normal;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 55px;
     font-weight: 400;
-    line-height: normal;
-    padding-top: 45px;
-    padding-left: 30px;
+    font-size: 40px;
+    line-height: 40px;
+    padding-top: 38px;
+    color: black;
+    background-color: #E9E9E9;
 }
 
-.input-list {
+.form {
     padding-left: 45px;
     padding-right: 45px;
-    width: 1080px;
-    height: 106px;
-    align-items: center !important;
-    display: flex;
-    justify-content: center;
-    column-gap: 31px;
+    padding-bottom: 70px;
+    background-color: #E9E9E9;
 }
 
-.find {
+.form-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1080px;
+    padding: 28px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.form-fieldset {
+    margin-right: 20px;
+    margin-left: 0;
+    padding-top: 15px;
+    padding-right: 20px;
+    border: none;
+    border-right: 1px solid #E1E1E1;
+}
+
+legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+
+.form-select {
+    max-width: 190px;
+}
+
+.form-title {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--color-black);
+}
+
+.form-input {
+    width: 140px;
+    height: 17px;
+    padding: 0px 0px 0px 1px;
+}
+
+.form-all {
+    border: none;
+}
+
+.form-select {
+    max-width: 170px;
+}
+
+.form-input {
+    border-bottom: 1px solid #CCCCCC;
+    width: 90px;
+}
+
+.form-input-date {
+    width: 140px;
+}
+
+.button-block {
     width: 108px;
     height: 42px;
     border: 1px solid #c93;
@@ -639,13 +714,14 @@ a {
     align-items: center;
     display: flex;
     text-decoration: none;
-    background: var(--color-default);
-    color: var(--color-white);
-}
-
-.find-nav {
     font-size: 16px;
     font-family: 'Muller', sans-serif;
     color: #c93;
-    padding: 13px 20px;
 }
+
+.button-block:hover {
+    background-color: #c93;
+    color: white;
+    cursor: pointer;
+}
+
