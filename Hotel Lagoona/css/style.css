@@ -22,6 +22,7 @@ ul {
 
 .nav-list {
     display: flex;
+
 }
 
 .nav-list-item:not(:first-child) {
@@ -53,6 +54,10 @@ ul {
     color: #666;
 }
 
+.logo-tel:hover {
+    color: #c93;
+}
+
 .Accaunt {
     display: block;
     font-size: 16px;
@@ -69,6 +74,12 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-right: 1px solid #e1e1e1;
+    padding-right: 56px;
+}
+
+.nav-link:hover {
+    color: #c93;
 }
 
 .header-button {
@@ -78,12 +89,28 @@ ul {
     padding-left: 80px;
 }
 
+.header {
+    margin-bottom: 70px;
+}
+
 .button {
-    display: block;
-    border: 1px solid #c93;
     padding: 13px 20px;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--color-default);
+    border: 1px solid var(--color-default);
     border-radius: 10px;
+    transition-property: background-color, color;
+    transition-duration: 0.3s, 0.2s;
+    transition-timing-function: ease, linear;
     color: #c93;
+    border: 1px solid #c93;
+}
+
+.button-reset {
+    padding: 0;
+    border: none;
+    background: transparent;
     cursor: pointer;
 }
 
@@ -114,13 +141,14 @@ ul {
 /* Section-1 */
 
 .section-1-h1 {
-    display: inline-block;
-    color: #333;
-    font-family: 'Muller';
-    font-size: 40px;
-    font-style: normal;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 55px;
     font-weight: 400;
-    line-height: normal;
+    font-size: 40px;
+    line-height: 40px;
+    color: #333;
+    
 }
 
 .main-hero {
@@ -134,17 +162,19 @@ ul {
     flex-shrink: 0;
     border-radius: 15px;
     padding-left: 45px;
-    background-image: url(/img/hero-1.jpg);
+    background-repeat: no-repeat;
+    background: linear-gradient(90deg, rgba(48,64,89,.84) -2.9%, rgba(53,65,83,0) 65.7%), url(/img/hero-1.jpg);
 }
 
 .hero-3 {
+    z-index: 1;
     width: 573px;
     height: 258px;
     flex-shrink: 0;
     border-radius: 15px;
     padding-left: 45px;
-    background-image: url(/img/hero-3.png);
     margin-top: 25px;
+    background: linear-gradient(90deg, rgba(48,64,89,.84) -2.9%, rgba(53,65,83,0) 65.7%), url(/img/hero-3.png);
 }
 
 .hero-2 {
@@ -154,8 +184,48 @@ ul {
     border-radius: 15px;
     padding-left: 45px;
     padding-top: 150px;
-    background-image: url(/img/hero-2.jpg);
+    background-size: cover;
+    background: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(/img/hero-2.jpg);
 }
+
+/* .hero-2::before {
+    content: '';
+    position: absolute;
+    margin-top: 309px;
+    margin-left: 965px;
+    border-radius: 15px;
+    width: 573px;
+    height: 540px;
+    top: 0;
+    left: 0;
+    
+    background: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%);
+} */
+/* .hero-3::before {
+    z-index: 0;
+    content: '';
+    position: absolute;
+    margin-top: 590px;
+    margin-left: 367px;
+    border-radius: 15px;
+    width: 573px;
+    height: 258px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(48,64,89,.84) -2.9%, rgba(53,65,83,0) 65.7%);
+} */
+/* .hero-1::before {
+    content: '';
+    position: absolute;
+    margin-top: 309px;
+    margin-left: 367px;
+    border-radius: 15px;
+    width: 573px;
+    height: 258px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(48,64,89,.84) -2.9%, rgba(53,65,83,0) 65.7%);
+} */
 
 @font-face {
     font-family: "Muller";
@@ -208,6 +278,21 @@ ul {
     height: 80px;
     padding-top: 40px;
     margin: 0;
+    position: relative;
+}
+
+.hero-h3 {
+    color: #FFF;
+    font-family: 'Muller';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 420px;
+    height: 80px;
+    padding-top: 40px;
+    margin: 0;
+    position: relative;
 }
 
 .hero-2-h2 {
@@ -219,6 +304,10 @@ ul {
     line-height: normal;
     width: 299px;
     height: 180px;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    position: relative;
 }
 
 .Podrobnee {
@@ -229,6 +318,22 @@ ul {
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+    align-items: center;
+    display: flex;
+    position: absolute;
+}
+
+.Podrobnee:hover .Podrobnee-1:hover {
+    color: #ff7300;
+    transition: transform 0.3s linear
+}
+
+.Podrobnee:hover .services-svg {
+    transform: translateX(11px);
+}
+
+.Podrobnee-1:hover .services-svg {
+    transform: translateX(11px);
 }
 
 .Podrobnee-1 {
@@ -239,7 +344,9 @@ ul {
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
-    padding-top: 50px;
+    align-items: center;
+    display: flex;
+    position: relative;
 }
 
 .paragraph-1 {
@@ -251,6 +358,7 @@ ul {
     line-height: normal;
     display: block;
     padding-top: 35px;
+    position: relative;
 }
 
 .paragraph {
@@ -260,6 +368,9 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0;
+    margin-bottom: 47px;
+    position: relative;
 }
 
 /* Section-2 */
@@ -583,6 +694,18 @@ a {
     background-repeat: no-repeat;
     padding-bottom: 27px;
     background-image: url(/img/41.png);
+    outline: 1px solid var(--color-default);
+    outline-offset: 5px;
+}
+
+.placing-item-last {
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/bg-placing.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .others-options {
@@ -593,7 +716,6 @@ a {
     font-weight: 500;
     font-size: 20px;
     line-height: 200%;
-
 }
 
 .hover-link {
@@ -607,6 +729,12 @@ a {
 
 .others-options:hover {
     color: #c93;
+}
+
+.services-svg {
+    width: 15px;
+    height: 15px;
+    transition: transform 0.3s linear;
 }
 
 .price {
@@ -725,3 +853,162 @@ legend {
     cursor: pointer;
 }
 
+/* Section-7 Контакты */
+
+.contacts-content {
+    background-color: white;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 45px;
+    height: 618px;
+    margin-bottom: 20px;
+}
+
+.address {
+    width: 35%;
+    font-style: normal;
+}
+
+.contacts-item {
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #c4c4c4;
+
+}
+
+.contacts-item-title {
+    width: 145px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+}
+
+.contacts-list {
+    height: 411px;
+}
+
+.contacts-item-content {
+    width: 230px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts-link {
+    color: #c93;
+}
+
+.contacts-button {
+    margin-top: 40px;
+    padding: 27px 29px;
+    border: 1px solid #c93;
+}
+
+/* Section-8 Footer */
+
+.container-footer {
+    justify-content: space-between;
+    padding: 51px;
+    padding-bottom: 45px;
+    background-color: #333;
+    border-radius: 15px;
+    height: 369px;
+}
+
+.container-footer-img {
+    background-image: url(/img/footer-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top 142px left 738px;
+}
+
+.footer-right-list {
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-right-item {
+    margin-bottom: 20px;
+}
+
+.footer-left {
+    max-width: 320px;
+    margin-right: 102px;
+    height: 273.95px;
+}
+
+.footer-descr {
+    width: 300;
+    margin: 0;
+    margin-bottom: 49px;
+    font-family: "Muller", sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 190%;
+}
+
+.footer-left-link {
+    color: #c93;
+}
+
+.footer-center {
+    width: 357px;
+    margin-right: 283px;
+    flex-direction: column;
+}
+
+.footer-center-desr {
+    display: block;
+    width: 357.17px;
+    font-size: 16px;
+    font-family: "Muller", sans-serif;
+    margin-bottom: 14px;
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 16px;
+}
+
+.footer-center-link {
+    font-family: "Muller", sans-serif;
+    font-size: 16px;
+    color: #c93;
+    line-height: 150%;
+}
+
+.footer-center-item {
+    flex-direction: column;
+    font-style: normal;
+}
+
+.footer-center-link:hover {
+    color: #F0BF5F;
+}
+
+.footer-left-link:hover {
+    color: #F0BF5F;
+}
+
+.footer-right-link {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+svg:hover path {
+    fill: #c93;
+}
